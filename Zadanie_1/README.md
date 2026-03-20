@@ -21,6 +21,5 @@ Dockerhub: https://hub.docker.com/repository/docker/adandoss/zadanie_1/general
 
 Filmik (trochę się rozgadałem, ale w sumie to najważniejsze jest w pierwszych 20 sekundach): 
 
-<video 
-    src="https://github.com/Adandoss/E-Biznes/Zadanie_1/prezentacja.mp4" controls="controls" style="max-width: 100%;">
-</video>
+https://github.com/user-attachments/assets/a26f3014-45b9-43db-b2eb-83cfbc123723
+
