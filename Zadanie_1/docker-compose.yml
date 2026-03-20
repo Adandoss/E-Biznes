@@ -1,0 +1,20 @@
+services:
+  python-app:
+    build: ./task_3.0
+    container_name: python-service
+    image: adandoss/zadanie_1:python-service-v1.0
+
+  kotlin-base:
+    build: ./task_3.5
+    container_name: kotlin-base-service
+    image: adandoss/zadanie_1:kotlin-base-service-v1.0
+
+  gradle-config:
+    build: ./task_4.0
+    container_name: gradle-config-service
+    image: adandoss/zadanie_1:gradle-config-service-v1.0
+
+  gradle-full:
+    build: ./task_4.5
+    container_name: gradle-full-service
+    image: adandoss/zadanie_1:gradle-full-service-v1.0
