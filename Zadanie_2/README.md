@@ -13,3 +13,6 @@ Zadanie 2 Scala
 Kod: https://github.com/Adandoss/E-Biznes/tree/main/Zadanie_2
 
 Filmik: 
+
+https://github.com/user-attachments/assets/84b1e8b9-139a-4a0d-85c7-13d11a3c6ce7
+
