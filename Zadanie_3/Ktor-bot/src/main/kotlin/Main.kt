@@ -27,6 +27,19 @@ suspend fun main() {
             val listaKategorii = sklep.keys.joinToString(", ")
             message.channel.createMessage("Kategorie: " + listaKategorii)
         }
+
+        if (tresc.startsWith("!produkty ")) {
+            val zadanaKategoria = tresc.removePrefix("!produkty ").trim()
+
+            val produkty = sklep[zadanaKategoria]
+
+            if (produkty != null) {
+                val listaProduktow = produkty.joinToString(", ")
+                message.channel.createMessage("Produkty w " + zadanaKategoria + ": " + listaProduktow)
+            } else {
+                message.channel.createMessage("Nie ma " + zadanaKategoria + ". Uzyj !kategorie")
+            }
+        }
     }
 
     println("Działa chyba")
