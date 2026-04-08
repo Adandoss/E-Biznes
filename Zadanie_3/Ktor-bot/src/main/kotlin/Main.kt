@@ -16,6 +16,17 @@ suspend fun main() {
         if (tresc == "!hello") {
             message.channel.createMessage("wolrd!")
         }
+
+        val sklep = mapOf(
+            "elektronika" to listOf("Laptop", "Telefon", "lodówka Samsung, polecam"),
+            "ksiazki" to listOf("Silmarilon", "Władca Pierścieni", "Hobbit"),
+            "jedzenie" to listOf("Jabłko", "Chleb", "Mleko")
+        )
+
+        if (tresc == "!kategorie") {
+            val listaKategorii = sklep.keys.joinToString(", ")
+            message.channel.createMessage("Kategorie: " + listaKategorii)
+        }
     }
 
     println("Działa chyba")
