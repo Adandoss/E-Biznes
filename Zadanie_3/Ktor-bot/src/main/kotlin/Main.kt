@@ -12,6 +12,10 @@ suspend fun main() {
 
     kord.on<MessageCreateEvent> {
         val tresc = message.content.lowercase()
+
+        if (tresc == "!hello") {
+            message.channel.createMessage("wolrd!")
+        }
     }
 
     println("Działa chyba")
