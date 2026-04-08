@@ -17,3 +17,6 @@ Link do commita 4: https://github.com/Adandoss/E-Biznes/commit/7239791eab94c34dd
 Kod: https://github.com/Adandoss/E-Biznes/tree/main/Zadanie_3
 
 Filmik:
+
+https://github.com/user-attachments/assets/4d437448-cc78-43c9-8e0d-79a3884fcd75
+
