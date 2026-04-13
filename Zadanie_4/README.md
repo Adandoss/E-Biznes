@@ -16,3 +16,9 @@ https://github.com/Adandoss/E-Biznes/commit/02f33ed24ea38c76ee280efc53f0dbe5c5fa
 Link do commita: https://github.com/Adandoss/E-Biznes/commit/3dafedc2e293dd1f9a44591ae0d41f3931d09d34
 
 Kod: https://github.com/Adandoss/E-Biznes/tree/main/Zadanie_4
+
+Filmik (nie pokazałem jakoś wybitnie dużo CRUD-a ale działa, przysięgam na kota):
+
+
+https://github.com/user-attachments/assets/338b56d3-d824-4499-8457-41a8648f7fd4
+
