@@ -16,6 +16,11 @@ func main() {
 	database := db.InitDB()
 	e := echo.New()
 
+	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
+	AllowOrigins: []string{"http://localhost:5173"},
+	AllowMethods: []string{http.MethodGet, http.MethodPut, http.MethodPost, http.MethodDelete},
+	}))
+
 	productHandler := &handlers.ProductHandler{DB: database}
 	cartHandler := &handlers.CartHandler{DB: database}
 	paymentHandler := &handlers.PaymentHandler{DB: database}
