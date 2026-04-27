@@ -7,7 +7,8 @@ serwerowej;
 Link do commita 1:  
 https://github.com/Adandoss/E-Biznes/commit/e69b3f715334570d5c9596fe24f3f85e533ad600
 
-✅ 3.5 Należy dodać Koszyk wraz z widokiem; należy wykorzystać routing
+
+✅ 3.5 Należy dodać Koszyk wraz z widokiem; należy wykorzystać routing (pomyliłem main z App - routing widać w App.jsx)
 Link do commita 2:  
 https://github.com/Adandoss/E-Biznes/commit/a80990452556da068036257ec0e14fb1913587bd
 
