@@ -26,3 +26,8 @@ Link do commita 5:
 https://github.com/Adandoss/E-Biznes/commit/474e4d778d524e0e099a23da43468fcd194a2032
 
 Kod: https://github.com/Adandoss/E-Biznes/tree/main/Zadanie_5
+
+
+
+https://github.com/user-attachments/assets/a994951c-9edd-439b-8c26-ff7d78268305
+
