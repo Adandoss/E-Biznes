@@ -2,9 +2,7 @@ Zadanie 6 Testy
 
 ✅ 3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium
 (Kotlin, Python, Java, JS, Go, Scala)
-Link do commita 1:  
-
-
+Link do commita 1: (ten sam co 3.5)
 
 ✅ 3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 50 asercji
 Link do commita 2:  

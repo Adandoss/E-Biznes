@@ -1,0 +1,33 @@
+{
+  "auth": {
+    "username": "${BROWSERSTACK_USERNAME}",
+    "access_key": "${BROWSERSTACK_ACCESS_KEY}"
+  },
+  "browsers": [
+    {
+      "browser": "chrome",
+      "os": "Windows 11",
+      "versions": [
+        "latest"
+      ]
+    },
+    {
+      "browser": "firefox",
+      "os": "Windows 11",
+      "versions": [
+        "latest"
+      ]
+    }
+  ],
+  "run_settings": {
+    "cypress_config_file": "./cypress.config.js",
+    "cypress_version": "13",
+    "project_name": "Zadanie 6 - Sklep",
+    "build_name": "Testy funkcjonalne",
+    "parallels": 2,
+    "npm_dependencies": {}
+  },
+  "connection_settings": {
+    "local": true
+  }
+}
