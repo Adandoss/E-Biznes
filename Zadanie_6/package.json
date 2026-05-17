@@ -1,0 +1,21 @@
+{
+  "name": "zadanie_6",
+  "version": "1.0.0",
+  "description": "Zadanie 6 Testy",
+  "main": "index.js",
+  "scripts": {
+    "test:functional": "npx cypress run --spec cypress/e2e/functional.cy.js",
+    "test:api": "npx cypress run --spec cypress/e2e/api.cy.js",
+    "test:all": "npx cypress run",
+    "test:browserstack": "npx browserstack-cypress run --sync",
+    "cypress:open": "npx cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "browserstack-cypress-cli": "^1.36.5",
+    "cypress": "^15.14.2"
+  }
+}
