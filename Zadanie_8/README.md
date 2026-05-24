@@ -5,7 +5,7 @@ Pogrupuję nieco commity w logiczniejsze części, więc tradycyjne logowanmie i
 ✅ 3.0 logowanie przez aplikację serwerową (bez Oauth2)
 ✅ 3.5 rejestracja przez aplikację serwerową (bez Oauth2)  
 
-https://github.com/Adandoss/E-Biznes/commit f13a7bfc0d2c42c98a6cf504a79f70f5badf8528  
+https://github.com/Adandoss/E-Biznes/commit/f13a7bfc0d2c42c98a6cf504a79f70f5badf8528  
 
 ✅ 4.0 logowanie via Google OAuth2
 ✅ 4.5 logowanie via Facebook lub Github OAuth2
