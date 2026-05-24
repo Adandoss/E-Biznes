@@ -1,26 +1,24 @@
-Zadanie 7 Sonar
+Zadanie 8 Oauth2
 
-Nie wrzucam linków do commitów, no bo jak.
+Pogrupuję nieco commity w logiczniejsze części, więc tradycyjne logowanmie i rejestracja będą w jednym commicie, tak samo jak logowanie z Githuba i Gugla.
 
-✅ 3.0 Należy dodać litera do odpowiedniego kodu aplikacji serwerowej w
-hookach gita - lokalnie mam skrypt pre-commit, który uruchamia linter, ale dodałem też akcje do githuba (tak, one nie działają, bo tu wrzucam jako folder nie repo).
+✅ 3.0 logowanie przez aplikację serwerową (bez Oauth2)
+✅ 3.5 rejestracja przez aplikację serwerową (bez Oauth2)  
 
-✅ 3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod
-aplikacji serwerowej)  
-✅ 4.0 Należy wyeliminować wszystkie zapaszki w kodzie w Sonarze (kod
-aplikacji serwerowej)  
-✅ 4.5 Należy wyeliminować wszystkie podatności oraz błędy bezpieczeństwa
-w kodzie w Sonarze (kod aplikacji serwerowej)  
-✅ 5.0 Należy wyeliminować wszystkie błędy oraz zapaszki w kodzie
-aplikacji klienckiej  
+https://github.com/Adandoss/E-Biznes/commit f13a7bfc0d2c42c98a6cf504a79f70f5badf8528  
 
-<img width="1538" height="617" alt="Screenshot From 2026-05-17 19-13-01" src="https://github.com/user-attachments/assets/ec7787aa-aafb-49a5-921f-c7d78d53f235" />
+✅ 4.0 logowanie via Google OAuth2
+✅ 4.5 logowanie via Facebook lub Github OAuth2
 
-Kod: https://github.com/Adandoss/E-Biznes/tree/main/Zadanie_7
+https://github.com/Adandoss/E-Biznes/commit/c651620343ca1abbb525d9551a4fcb7f62e0dca6  
 
-(więcej w filmiku):
+✅ 5.0 zapisywanie danych logowania OAuth2 po stronie serwera
+
+https://github.com/Adandoss/E-Biznes/commit/83aa1f0e4489e43f033218d5051c30044aa18638
 
 
-https://github.com/user-attachments/assets/326b5936-7e6b-404e-8352-70c7c7d129d3
+
+Kod: https://github.com/Adandoss/E-Biznes/tree/main/Zadanie_8
+
 
 
