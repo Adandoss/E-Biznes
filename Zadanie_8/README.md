@@ -17,8 +17,8 @@ https://github.com/Adandoss/E-Biznes/commit/c651620343ca1abbb525d9551a4fcb7f62e0
 https://github.com/Adandoss/E-Biznes/commit/83aa1f0e4489e43f033218d5051c30044aa18638
 
 
-
 Kod: https://github.com/Adandoss/E-Biznes/tree/main/Zadanie_8
 
 
+https://github.com/user-attachments/assets/721304a1-ae2f-47ea-8cb3-9338a3386e7e
 
