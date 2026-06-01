@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  backend:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+    env_file:
+      - ./backend/.env
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:8080
+
+  kotlin-bot:
+    build:
+      context: ./kotlin-bot
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    environment:
+      - PYTHON_SERVICE_URL=http://python-service:8000
+      - BACKEND_URL=http://backend:8080
+      - BOT_TOKEN=${BOT_TOKEN}
+
+  python-service:
+    build:
+      context: ./python-service
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - OLLAMA_API_URL=http://host.docker.internal:11434
+      - MODEL_NAME=llama3.1:8b
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+

@@ -1,0 +1,34 @@
+# Version control
+.git
+.gitignore
+
+# Docker files
+Dockerfile
+docker-compose*.yml
+.dockerignore
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+log/
+*.log
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secrets / credentials
+*.pem
+*.key
+*.env
+.env*
+token.txt
