@@ -9,6 +9,7 @@ on:
     branches: [ main, master ]
     paths:
       - 'Zadanie_10/**'
+  workflow_dispatch: 
 
 jobs:
   sonar-and-mail:

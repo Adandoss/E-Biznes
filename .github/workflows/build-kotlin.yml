@@ -5,6 +5,7 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+  workflow_dispatch: # Umożliwia ręczne uruchomienie z portalu GitHub
 
 jobs:
   build-kotlin:
