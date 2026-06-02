@@ -1,57 +1,57 @@
-# name: SonarQube Analysis and Mail Notification
+name: SonarQube Analysis and Mail Notification
 
-# on:
-#   push:
-#     branches: [ main, master ]
-#     paths:
-#       - 'Zadanie_10/**'
-#   pull_request:
-#     branches: [ main, master ]
-#     paths:
-#       - 'Zadanie_10/**'
-#   workflow_dispatch: 
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'Zadanie_10/**'
+  pull_request:
+    branches: [ main, master ]
+    paths:
+      - 'Zadanie_10/**'
+  workflow_dispatch: 
 
-# jobs:
-#   sonar-and-mail:
-#     name: Run Sonar and Notify
-#     runs-on: ubuntu-latest
+jobs:
+  sonar-and-mail:
+    name: Run Sonar and Notify
+    runs-on: ubuntu-latest
 
-#     steps:
-#       - name: Checkout Code
-#         uses: actions/checkout@v4
-#         with:
-#           fetch-depth: 0 
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 
 
-#       - name: SonarCloud Scan
-#         uses: SonarSource/sonarcloud-github-action@v2.3.0
-#         with:
-#           projectBaseDir: Zadanie_10
-#         env:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v2.3.0
+        with:
+          projectBaseDir: Zadanie_10
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
-#       - name: Send Mail Notification
-#         uses: dawidd6/action-send-mail@v3
-#         if: always() 
-#         with:
-#           server_address: smtp.gmail.com
-#           server_port: 465
-#           username: ${{ secrets.MAIL_USERNAME }}
-#           password: ${{ secrets.MAIL_SECRET }}
-#           subject: "Wyniki analizy Sonar w folderze Zadanie_10"
-#           body: |
-#             No, dzień dobry.
+      - name: Send Mail Notification
+        uses: dawidd6/action-send-mail@v3
+        if: always() 
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_SECRET }}
+          subject: "Wyniki analizy Sonar w folderze Zadanie_10"
+          body: |
+            No, dzień dobry.
             
-#             Analiza kodu dla folderu Zadanie_10 została zakończona.
+            Analiza kodu dla folderu Zadanie_10 została zakończona.
             
-#             Status wykonania: ${{ job.status }}
-#             Gałąź (Branch): ${{ github.ref_name }}
+            Status wykonania: ${{ job.status }}
+            Gałąź (Branch): ${{ github.ref_name }}
             
-#             Pełne wyniki analizy w panelu SonarCloud:
-#             https://sonarcloud.io/project/overview?id=Adandoss_E-Biznes
+            Pełne wyniki analizy w panelu SonarCloud:
+            https://sonarcloud.io/project/overview?id=Adandoss_E-Biznes
             
-#             Logi z wykonania tego pipeline'u na GitHubie:
-#             https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
-#           to: ${{ secrets.MAIL_USERNAME }}
-#           from: GitHub Actions CI
+            Logi z wykonania tego pipeline'u na GitHubie:
+            https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          to: ${{ secrets.MAIL_USERNAME }}
+          from: GitHub Actions CI
 

@@ -1,38 +1,38 @@
-# name: Build and Package Kotlin Bot
+name: Build and Package Kotlin Bot
 
-# on:
-#   push:
-#     branches: [ main, master ]
-#   pull_request:
-#     branches: [ main, master ]
-#   workflow_dispatch: # Umożliwia ręczne uruchomienie z portalu GitHub
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch: # Umożliwia ręczne uruchomienie z portalu GitHub
 
-# jobs:
-#   build-kotlin:
-#     name: Build FatJar
-#     runs-on: ubuntu-latest
+jobs:
+  build-kotlin:
+    name: Build FatJar
+    runs-on: ubuntu-latest
 
-#     steps:
-#       - name: Checkout Code
-#         uses: actions/checkout@v4
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-#       - name: Set up JDK 25
-#         uses: actions/setup-java@v4
-#         with:
-#           distribution: 'temurin'
-#           java-version: '25'
-#           cache: 'gradle'
+      - name: Set up JDK 25
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '25'
+          cache: 'gradle'
 
-#       - name: Grant execute permission for gradlew
-#         run: chmod +x gradlew
-#         working-directory: Zadanie_10/kotlin-bot
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+        working-directory: Zadanie_10/kotlin-bot
 
-#       - name: Build FatJar using ShadowJar
-#         run: ./gradlew shadowJar --no-daemon
-#         working-directory: Zadanie_10/kotlin-bot
+      - name: Build FatJar using ShadowJar
+        run: ./gradlew shadowJar --no-daemon
+        working-directory: Zadanie_10/kotlin-bot
 
-#       - name: Upload Build Artifact
-#         uses: actions/upload-artifact@v4
-#         with:
-#           name: kotlin-bot-fatjar
-#           path: Zadanie_10/kotlin-bot/build/libs/*-all.jar
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: kotlin-bot-fatjar
+          path: Zadanie_10/kotlin-bot/build/libs/*-all.jar
