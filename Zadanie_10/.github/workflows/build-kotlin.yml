@@ -24,14 +24,14 @@ jobs:
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
-        working-directory: Zadanie_9/kotlin-bot
+        working-directory: Zadanie_10/kotlin-bot
 
       - name: Build FatJar using ShadowJar
         run: ./gradlew shadowJar --no-daemon
-        working-directory: Zadanie_9/kotlin-bot
+        working-directory: Zadanie_10/kotlin-bot
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
         with:
           name: kotlin-bot-fatjar
-          path: Zadanie_9/kotlin-bot/build/libs/*-all.jar
+          path: Zadanie_10/kotlin-bot/build/libs/*-all.jar
